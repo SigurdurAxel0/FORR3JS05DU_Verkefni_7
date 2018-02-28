@@ -1,0 +1,18 @@
+1.
+Callback fall er fall sem er keyrt um leið og annað fall hefur verið keyrt. 
+Fall er kallað callback fall ef það er sett í annað fall sem argument.
+2.
+Event loop er alltaf í gangi og athugar hvort að Call stack sé tómt, 
+ef það er tómt þá sskoðar það Event queue og ef það er eitthvað þar þá er það fært í call stack.
+3.
+function checkUsername() {
+var target = e.target;
+}
+var el = document.getElementById('username');
+el.addEventListener('blur', checkUsername, false);
+4.
+Það er fyrir useCapture og ef True þá eru öll þessi event þessi event skráð í listener áður en það er sent í eventTarget.
+5.
+a. stopPropagation() kemur í veg fyrir að click event hoppi upp í parent element. 
+b. preventDefault() kemur í veg fyrir að hlekkur opni slóð.
+
